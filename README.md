@@ -84,27 +84,27 @@ My homelab consists of **four physical servers** with the following roles:
 ### Base
 The first layer in the setup. It runs **GitLab**, GitLab runners, and some foundational services like SMB for shares and a registry. It also builds images for use in GitLab pipelines.
 #### 📂 Repositories
-- [base-ansible](https://github.com/InvalidIdentifier/base-ansible) *(coming soon)*
-- [base-container](https://github.com/InvalidIdentifier/base-container) *(coming soon)*
+- [base-ansible](https://github.com/InvalidIdentifier/base-ansible) 
+- [base-container](https://github.com/InvalidIdentifier/base-container) 
 - [base-images](https://github.com/InvalidIdentifier/base-images)
 
 ### Infra
 The second layer. It runs **monitoring, log aggregation**, and **notification services**. Additionally, a **Traefik reverse proxy** is deployed in a DMZ subnet.
 #### 📂 Repositories
-- [infra-ansible](https://github.com/InvalidIdentifier/infra-ansible) *(coming soon)*
-- [infra-container](https://github.com/InvalidIdentifier/infra-container) *(coming soon)*
+- [infra-ansible](https://github.com/InvalidIdentifier/infra-ansible) 
+- [infra-container](https://github.com/InvalidIdentifier/infra-container) 
 
 ### Docker
 Provides a **runtime environment for Docker containers** and the services deployed to it.
 #### 📂 Repositories
-- [docker-ansible](https://github.com/InvalidIdentifier/docker-ansible) *(coming soon)*
-- [docker-container](https://github.com/InvalidIdentifier/docker-container) *(coming soon)*
+- [docker-ansible](https://github.com/InvalidIdentifier/docker-ansible) 
+- [docker-container](https://github.com/InvalidIdentifier/docker-container) 
 
 ### k3s
 Provides a **K3s cluster** and deploys services to it.
 #### 📂 Repositories
-- [k3s-ansible](https://github.com/InvalidIdentifier/k3s-ansible) *(coming soon)*
-- [k3s-container](https://github.com/InvalidIdentifier/k3s-container) *(coming soon)*
+- [k3s-ansible](https://github.com/InvalidIdentifier/k3s-ansible) 
+- [k3s-container](https://github.com/InvalidIdentifier/k3s-container) 
 
 ### Proxmox Workloads
 Manages the **Proxmox workloads**. Everything is created via **Terraform**, with its state currently stored on a share.
