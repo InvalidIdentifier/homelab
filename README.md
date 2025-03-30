@@ -8,7 +8,7 @@ The repositories in this account are mirrors to my selfhosted ones, so the code 
 
 I follow a multi-step setup approach, which is why there are multiple repositories for different stages in this account.
 
-Currently, there are **11 repositories**. While this may be confusing for some, it works well for me so far.
+Currently, there are **13 repositories**. While this may be confusing for some, it works well for me so far.
 
 Everything is **subject to change**!
 
@@ -113,9 +113,10 @@ Manages the **Proxmox workloads**. Everything is created via **Terraform**, with
 
 ## ✅ ToDo
 - Move reverse proxy to DMZ again
-- Redo Ansible roles
+- Redo Ansible roles (ongoing)
 - Move services to K3s
-- Split docker-compose.yml
+- Split docker-compose.yml (ongoing)
 - Automate Grafana Dashboards and Alerts
 - Redo Gitlab Runners
 - Cleanup reverseproxies
+- Create Readmes for every repository
