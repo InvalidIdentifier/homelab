@@ -2,6 +2,12 @@
 
 # Homelab Documentation 🚀
 
+There is much going on in the moment so this README doesn't reflect reality atm.
+
+
+
+
+
 This GitHub account serves as documentation for everything in my homelab.
 
 The repositories in this account are mirrors to my selfhosted ones, so the code is always updated.
