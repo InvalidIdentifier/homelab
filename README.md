@@ -26,7 +26,6 @@ Everything is **subject to change**! I am in the process of using as much Ansibl
   - [CI/CD](#cicd)
 - [Stacks 📦](#stacks)
   - [Base](#base)
-  - [Infra](#infra)
   - [Docker](#docker)
   - [k3s](#k3s)
   - [Proxmox Workloads](#proxmox-workloads)
