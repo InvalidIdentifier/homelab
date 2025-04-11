@@ -8,7 +8,7 @@ The repositories in this account are mirrors to my selfhosted ones, so the code 
 
 Currently, there are **13 repositories**. While this may be confusing for some, it works well for me so far.
 
-Everything is **subject to change**!
+Everything is **subject to change**! I am in the process of using as much Ansible as possible to learn.
 
 </div>
 
@@ -91,13 +91,22 @@ The Stack needs an overhaul wich will happen in the near future.
 Provides a **runtime environment for Docker containers** and the services deployed to it. Also currently deploys the monitoring-stack.
 #### 📂 Repositories
 - [docker-ansible](https://github.com/InvalidIdentifier/docker-ansible) 
-- [docker-container](https://github.com/InvalidIdentifier/docker-container) 
+- [docker-container](https://github.com/InvalidIdentifier/docker-container)
+
+#### Used Ansible Roles
+- [ansible-role-docker-common-setup](https://github.com/InvalidIdentifier/ansible-role-docker-common-setup)
+- [ansible-role-docker-common-services](https://github.com/InvalidIdentifier/ansible-role-docker-common-services)
+- [ansible-role-docker-infra-node](https://github.com/InvalidIdentifier/ansible-role-docker-infra-node)
+- [ansible-role-docker-service-node](https://github.com/InvalidIdentifier/ansible-role-docker-service-node)
 
 ### k3s
 Provides a **K3s cluster** and deploys services to it.
 #### 📂 Repositories
 - [k3s-ansible](https://github.com/InvalidIdentifier/k3s-ansible) 
 - [k3s-container](https://github.com/InvalidIdentifier/k3s-container) 
+
+#### Used Ansible Roles
+- [the ones i stole from k3s.io](https://github.com/k3s-io/k3s-ansible)
 
 ### Proxmox Workloads
 Manages the **Proxmox workloads**. Everything is created via **Terraform**, with its state currently stored on a share.
