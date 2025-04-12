@@ -8,7 +8,7 @@ The repositories in this account are mirrors to my selfhosted ones, so the code 
 
 Currently, there are **13 repositories**. While this may be confusing for some, it works well for me so far.
 
-Everything is **subject to change**! I am in the process of using as much Ansible as possible to learn.
+Everything is **subject to change**! I am in the process of using as much Ansible as possible in order to learn.
 
 </div>
 
@@ -77,10 +77,9 @@ My homelab consists of **four physical servers** with the following roles:
 
 ### Base
 The first layer in the setup. It runs **GitLab**, GitLab runners, and some foundational services like SMB for shares and a registry. It also builds images for use in GitLab pipelines.
-The Stack needs an overhaul wich will happen in the near future.
+The Stack needs an overhaul wich will happen in the future. Currently the 'base_node' role just sits in the repository, wich i want to change sometime. Altough the stack is technically just another Dockernode its seperated because it needs to be there before everything else because its used to deploy everything else.
 #### 📂 Repositories
 - [base-ansible](https://github.com/InvalidIdentifier/base-ansible) 
-- [base-container](https://github.com/InvalidIdentifier/base-container) 
 - [base-images](https://github.com/InvalidIdentifier/base-images)
 
 #### Used Ansible Roles
@@ -89,8 +88,7 @@ The Stack needs an overhaul wich will happen in the near future.
 ### Docker
 Provides a **runtime environment for Docker containers** and the services deployed to it. Also currently deploys the monitoring-stack.
 #### 📂 Repositories
-- [docker-ansible](https://github.com/InvalidIdentifier/docker-ansible) 
-- [docker-container](https://github.com/InvalidIdentifier/docker-container)
+- [ansible-docker](https://github.com/InvalidIdentifier/ansible-docker) 
 
 #### Used Ansible Roles
 - [ansible-role-docker-common-setup](https://github.com/InvalidIdentifier/ansible-role-docker-common-setup)
@@ -119,3 +117,7 @@ Manages the **Proxmox workloads**. Everything is created via **Terraform**, with
 - Redo Gitlab Runners
 - Cleanup reverseproxies
 - Create Readmes for every repository
+- Add Repository for maintenance
+- Add Repository for backups
+- Add move molecule verifications
+- Add automatic testing before deployments via molecule
